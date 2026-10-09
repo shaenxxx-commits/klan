@@ -9,29 +9,29 @@
 
 ## CURRENT STATE
 
-    HEAD: n/a (git не инициализирован)
+    HEAD: 4b06403 (main)
     ACTIVE PHASE: documentation-setup
     STATUS: open
-    LAST COMPLETED: записан рабочий слой meta/
-                    (operator-preferences)
+    LAST COMPLETED: CURRENT_STATE обновлён после init
     WORKING HYPOTHESES:
-      - ДДА v0.4 согласована и записана на диск.
-      - Репозиторий пока не инициализирован.
+      - ДДА v0.4 записана на диск и закоммичена.
+      - Репозиторий инициализирован, локальная identity.
+      - Права 750/640, umask 0027.
     KNOWN UNKNOWNs:
-      - Git identity для репозитория не решён.
-      - Схема маскирования не зафиксирована.
-      - Pre-commit проверки отсутствуют.
-      - Права на каталоги пока 775/664 (umask 0002).
+      - Схема маскирования не зафиксирована (Q3).
+      - Pre-commit проверки отсутствуют (Q4).
+      - Remote не настроен.
     PENDING DECISION:
-      - git init + первый коммит.
-      - Git identity (локальная vs глобальная).
-      - Ужесточение прав до 750/640.
-      - Наполнение raw/.
-    LAST RESPONSE NUMBER: MS50
+      - Q3: MASKING.md vs раздел в CONCEPT.
+      - Q4: pre-commit hook — что и чем.
+      - Первое наполнение raw/.
+    LAST RESPONSE NUMBER: MS72
 
 ## Repository
 
-- LCH: ~/lch (git не инициализирован)
+- LCH: ~/lch (git init, main, 2 коммита)
+  - 9756f69 init: LCH v0.4 — ДДА, meta, README
+  - 4b06403 docs: update CURRENT_STATE after init
 - LAB (external source, метод координации):
   /home/shaen/nova-cortex-lab
 - ENVOY (параллельная пилотная ветка):
@@ -44,11 +44,11 @@
     ├── docs/           — AGENT, CONCEPT, CURRENT_STATE,
     │                     ONTOLOGY, DECISIONS, REDACTIONS
     ├── meta/           — operator-preferences,
-    │                     handoff-current
-    ├── raw/
-    ├── sensitive/
+    │                     handoff-current, open-questions
+    ├── raw/            — пуст
+    ├── sensitive/      — вне git
     │   └── quarantine/
-    └── evidence/
+    └── evidence/       — пуст
 
 ## Роли
 
@@ -59,11 +59,9 @@
 
 ## Что не сделано
 
-- Git-репозиторий не инициализирован.
 - raw/ не наполнен.
-- open-questions.md не создан.
-- Схема маскирования не зафиксирована.
-- Pre-commit проверки отсутствуют.
+- Q3, Q4 не закрыты.
+- Remote не настроен.
 
 ## Где смотреть
 
@@ -71,4 +69,5 @@
 - docs/CONCEPT.md — метод
 - docs/DECISIONS.md — журнал решений
 - meta/operator-preferences.md — правила работы
+- meta/open-questions.md — открытые вопросы
 - LAB (/home/shaen/nova-cortex-lab) — источник метода
