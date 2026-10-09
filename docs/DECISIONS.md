@@ -56,3 +56,14 @@ FACT оператором.
 **Основание:** Разделение контуров при общем источнике
 метода.
 **Статус:** GOVERNANCE
+
+**Решение:** Введён pre-commit guard.
+**Основание:** threat model — риск случайного коммита
+sensitive-файла. Реализация: meta/pre-commit.sh,
+симлинк в .git/hooks/pre-commit. Блокирует коммит
+sensitive/ и файлов с чувствительными паттернами
+(*.id.*, *.scan.pdf, .env, *.key, *.secret, *.pem,
+config.local.*). Предупреждает (не блокирует)
+при коммите из raw/. Протестирован на
+sensitive/_test_guard.md — блокировка сработала.
+**Статус:** GOVERNANCE
