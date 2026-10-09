@@ -5,23 +5,27 @@
 
 ## Что есть
 
-- Структура каталогов: docs/, raw/, sensitive/,
-  sensitive/quarantine/, evidence/, meta/.
+- Структура каталогов: docs/, meta/, raw/, sensitive/,
+  sensitive/quarantine/, evidence/.
 - .gitignore.
 - README.md.
-- ДДА: AGENT.md, CONCEPT.md.
+- ДДА: AGENT.md, CONCEPT.md, CURRENT_STATE.md,
+  ONTOLOGY.md, DECISIONS.md, REDACTIONS.md.
+- meta/: operator-preferences.md, handoff-current.md,
+  open-questions.md.
+- Git-репозиторий инициализирован. Ветка main.
+  Первый коммит: 9756f69.
+- Git identity локальная: LCH Kuchuk <maia.systems@proton.me>.
+- Права каталогов 750, файлов 640. umask 0027 в ~/.bashrc.
 
 ## Что отсутствует
 
-- Наполнение данными.
-- ONTOLOGY.md, DECISIONS.md, REDACTIONS.md.
-- meta/ (handoff-current, operator-preferences,
-  open-questions).
-- Инициализация git-репозитория.
+- Наполнение данными (raw/ пуст).
 - Pre-commit проверки.
 - Детальная схема маскирования.
+- Удалённый remote.
 
-## Физическая структура (ожидаемая)
+## Физическая структура
 
     lch/
     ├── README.md
@@ -34,15 +38,11 @@
 
 ## Ближайшие шаги
 
-1. Записать ONTOLOGY.md, DECISIONS.md, REDACTIONS.md.
-2. Создать meta/ и наполнить.
-3. Инициализировать git-репозиторий.
-4. Первое наполнение raw/.
+1. Первое наполнение raw/.
+2. Решение по Q3 (MASKING.md vs раздел в CONCEPT).
+3. Решение по Q4 (pre-commit).
+4. При необходимости — remote.
 
 ## Открытые вопросы
 
-- Физическое расположение evidence и long-term
-  хранение карантина.
-- Порядок доступа разных LLM-агентов
-  (локальные vs внешние).
-- Git identity для репозитория.
+См. meta/open-questions.md.
