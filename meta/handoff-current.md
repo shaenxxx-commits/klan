@@ -9,33 +9,35 @@
 
 ## CURRENT STATE
 
-    HEAD: 2a35882 (main)
-    ACTIVE PHASE: мовний перехід + перейменування
+    HEAD: bd8d381 (main = origin/main)
+    ACTIVE PHASE: external-run-preparation
     STATUS: open
-    LAST COMPLETED: Q7.1-Q7.4 вирішено;
-                    переклад ДДА на українську
+    LAST COMPLETED: Q8 закрито (публічний метод-шар);
+                    meta/externals/ створено
     WORKING HYPOTHESES:
       - Мова проєкту — українська.
       - Назва KLAN (латиниця), кирилицею КЛАН.
       - Метки знання і статуси — англійською.
+      - Зовнішні читають тільки публічний метод-шар.
     KNOWN UNKNOWNs:
       - Бекап-схема (Q9).
       - Схема маскування (Q3).
       - Конвеєр сканів (Q10).
-      - Зовнішній доступ (Q8).
+      - Перший прогін зовнішніх не проведено.
     PENDING DECISION:
       - Q9: провайдер, фізичний носій, шифрування.
       - Q10: класи документів, OCR, структура.
-      - Q8: спосіб доступу зовнішніх.
-    LAST RESPONSE NUMBER: MS114
+      - Q3: MASKING.md vs розділ у CONCEPT.
+    LAST RESPONSE NUMBER: MS138
 
 ## Repository
 
-- KLAN: ~/lch (git init, main)
+- KLAN: ~/lch (git init, main, remote origin)
+  https://github.com/shaenxxx-commits/klan
 - LAB (external source, метод координації):
-  /home/shaen/nova-cortex-lab
-- ENVOY (паралельна пілотна гілка):
-  /home/shaen/envoy
+  https://github.com/shaenxxx-commits/nova-cortex-lab
+- Envoy (паралельна пілотна гілка):
+  https://github.com/shaenxxx-commits/envoy
 
 ## Структура
 
@@ -46,23 +48,30 @@
     ├── meta/           — operator-preferences,
     │                     handoff-current, open-questions,
     │                     pre-commit.sh
-    ├── raw/            — порожній
+    │   └── externals/  — README + журнали прогонів
+    ├── raw/            — поза git
     ├── sensitive/      — поза git
     │   └── quarantine/
-    └── evidence/       — порожній
+    └── evidence/       — поза git
+
+## Публічний метод-шар
+
+У GitHub-репо потрапляють: README.md, docs/, meta/.
+Не потрапляють: raw/, sensitive/, evidence/.
 
 ## Ролі
 
 - Architect: shaen (Оператор)
 - Lead: поточний ведучий
-- External: резерв, для критичних прогонів
-  (GPT-5.6 Luna, Kimi K2 Thinking, Qwen3.7-Plus)
+- External: GPT-5.6 Luna, Kimi K2 Thinking,
+  Qwen3.7-Plus
 
 ## Що не зроблено
 
-- Q8-Q10 не закриті.
-- Remote не налаштовано.
+- Q3, Q9, Q10 не закриті.
+- Перший прогін зовнішніх не проведено.
 - raw/ не наповнено.
+- Бекап-схема не налаштована.
 
 ## Де дивитись
 
@@ -71,4 +80,6 @@
 - docs/DECISIONS.md — журнал рішень
 - meta/operator-preferences.md — правила роботи
 - meta/open-questions.md — відкриті питання
-- LAB (/home/shaen/nova-cortex-lab) — джерело методу
+- meta/externals/README.md — правила прогонів
+- LAB (https://github.com/shaenxxx-commits/nova-cortex-lab)
+  — джерело методу
