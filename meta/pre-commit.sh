@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
-# LCH pre-commit guard.
-# Установка: ln -sf ../../meta/pre-commit.sh .git/hooks/pre-commit
-# Проверки:
-#   1. Блокировать любые файлы из sensitive/.
-#   2. Блокировать файлы, совпадающие с чувствительными
-#      расширениями/именами из .gitignore.
-#   3. Предупреждать (не блокировать) при коммите из raw/.
+# KLAN pre-commit guard.
+# Встановлення: ln -sf ../../meta/pre-commit.sh .git/hooks/pre-commit
+# Перевірки:
+#   1. Блокувати будь-які файли з sensitive/.
+#   2. Блокувати файли, що збігаються з чутливими
+#      розширеннями/іменами з .gitignore.
+#   3. Попереджати (не блокувати) при коміті з raw/.
 
 set -e
 
@@ -23,7 +23,7 @@ for f in $STAGED; do
   esac
 done
 
-# 2. чувствительные расширения / имена
+# 2. чутливі розширення / імена
 for f in $STAGED; do
   case "$f" in
     *.id.*|*.scan.pdf|.env|*.key|*.secret|*.pem|config.local.*)
@@ -38,7 +38,7 @@ if [ "$BLOCKED" -eq 1 ]; then
   exit 1
 fi
 
-# 3. raw/ — предупреждение
+# 3. raw/ — попередження
 RAW=$(echo "$STAGED" | grep -E '^raw/' || true)
 if [ -n "$RAW" ]; then
   echo "WARNING: raw/ files staged:"

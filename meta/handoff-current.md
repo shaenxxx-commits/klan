@@ -1,40 +1,40 @@
-# HANDOFF CURRENT — ЛЧ
+# HANDOFF CURRENT — KLAN
 
 **Дата:** 2026-10-09
-**Статус:** актуальный
-**Основание:** handoff-protocol LAB (адаптируется)
+**Статус:** актуальний
+**Основа:** handoff-protocol LAB (адаптується)
 
-Снимок текущего состояния ЛЧ. Передаётся новому
-ведущему при смене чата.
+Знімок поточного стану KLAN. Передається новому
+ведучому при зміні чату.
 
 ## CURRENT STATE
 
-    HEAD: 4b06403 (main)
-    ACTIVE PHASE: documentation-setup
+    HEAD: 2a35882 (main)
+    ACTIVE PHASE: мовний перехід + перейменування
     STATUS: open
-    LAST COMPLETED: CURRENT_STATE обновлён после init
+    LAST COMPLETED: Q7.1-Q7.4 вирішено;
+                    переклад ДДА на українську
     WORKING HYPOTHESES:
-      - ДДА v0.4 записана на диск и закоммичена.
-      - Репозиторий инициализирован, локальная identity.
-      - Права 750/640, umask 0027.
+      - Мова проєкту — українська.
+      - Назва KLAN (латиниця), кирилицею КЛАН.
+      - Метки знання і статуси — англійською.
     KNOWN UNKNOWNs:
-      - Схема маскирования не зафиксирована (Q3).
-      - Pre-commit проверки отсутствуют (Q4).
-      - Remote не настроен.
+      - Бекап-схема (Q9).
+      - Схема маскування (Q3).
+      - Конвеєр сканів (Q10).
+      - Зовнішній доступ (Q8).
     PENDING DECISION:
-      - Q3: MASKING.md vs раздел в CONCEPT.
-      - Q4: pre-commit hook — что и чем.
-      - Первое наполнение raw/.
-    LAST RESPONSE NUMBER: MS72
+      - Q9: провайдер, фізичний носій, шифрування.
+      - Q10: класи документів, OCR, структура.
+      - Q8: спосіб доступу зовнішніх.
+    LAST RESPONSE NUMBER: MS114
 
 ## Repository
 
-- LCH: ~/lch (git init, main, 2 коммита)
-  - 9756f69 init: LCH v0.4 — ДДА, meta, README
-  - 4b06403 docs: update CURRENT_STATE after init
-- LAB (external source, метод координации):
+- KLAN: ~/lch (git init, main)
+- LAB (external source, метод координації):
   /home/shaen/nova-cortex-lab
-- ENVOY (параллельная пилотная ветка):
+- ENVOY (паралельна пілотна гілка):
   /home/shaen/envoy
 
 ## Структура
@@ -44,30 +44,31 @@
     ├── docs/           — AGENT, CONCEPT, CURRENT_STATE,
     │                     ONTOLOGY, DECISIONS, REDACTIONS
     ├── meta/           — operator-preferences,
-    │                     handoff-current, open-questions
-    ├── raw/            — пуст
-    ├── sensitive/      — вне git
+    │                     handoff-current, open-questions,
+    │                     pre-commit.sh
+    ├── raw/            — порожній
+    ├── sensitive/      — поза git
     │   └── quarantine/
-    └── evidence/       — пуст
+    └── evidence/       — порожній
 
-## Роли
+## Ролі
 
 - Architect: shaen (Оператор)
-- Lead: текущий ведущий
-- External: резерв, для критических прогонов
-  (Kimi, Sakana/Namazu, Grok)
+- Lead: поточний ведучий
+- External: резерв, для критичних прогонів
+  (GPT-5.6 Luna, Kimi K2 Thinking, Qwen3.7-Plus)
 
-## Что не сделано
+## Що не зроблено
 
-- raw/ не наполнен.
-- Q3, Q4 не закрыты.
-- Remote не настроен.
+- Q8-Q10 не закриті.
+- Remote не налаштовано.
+- raw/ не наповнено.
 
-## Где смотреть
+## Де дивитись
 
-- docs/AGENT.md — точка входа
+- docs/AGENT.md — точка входу
 - docs/CONCEPT.md — метод
-- docs/DECISIONS.md — журнал решений
-- meta/operator-preferences.md — правила работы
-- meta/open-questions.md — открытые вопросы
-- LAB (/home/shaen/nova-cortex-lab) — источник метода
+- docs/DECISIONS.md — журнал рішень
+- meta/operator-preferences.md — правила роботи
+- meta/open-questions.md — відкриті питання
+- LAB (/home/shaen/nova-cortex-lab) — джерело методу
