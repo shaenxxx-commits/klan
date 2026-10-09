@@ -1,6 +1,6 @@
 # EXTERNALS — KLAN
 
-Каталог зовнішніх прогонів. Один файл на один прогон
+Каталог зовнішніх прогонів. Один файл на один прогін
 однієї моделі.
 
 Ім'я файлу: `YYYY-MM-DD-<slug>.md`
@@ -20,16 +20,45 @@
     ACCESS: free / paid / subscription
     DATE: <YYYY-MM-DD>
 
-Без цього блоку прогон не враховується.
+Без цього блоку прогін не враховується.
+
+## Правило нумерації
+
+Кожне повідомлення зовнішнього починається з
+наскрізного номера MS<N> на першому рядку. Лічильник
+локальний для кожного зовнішнього, стартує з MS1,
+монотонний, не перезапускається.
 
 ## Доступ до матеріалів
 
-- KLAN (метод-шар, публічний):
-  https://github.com/shaenxxx-commits/klan
-- LAB (метод координації, зовнішнє джерело):
-  https://github.com/shaenxxx-commits/nova-cortex-lab
-- Envoy (паралельна пілотна гілка):
-  https://github.com/shaenxxx-commits/envoy
+Репозиторії (навігація):
+- KLAN: https://github.com/shaenxxx-commits/klan
+- LAB: https://github.com/shaenxxx-commits/nova-cortex-lab
+- Envoy: https://github.com/shaenxxx-commits/envoy
+
+Файли у форматі raw (прямий текст, без JS-обгортки):
+
+KLAN:
+- https://raw.githubusercontent.com/shaenxxx-commits/klan/main/README.md
+- https://raw.githubusercontent.com/shaenxxx-commits/klan/main/docs/AGENT.md
+- https://raw.githubusercontent.com/shaenxxx-commits/klan/main/docs/CONCEPT.md
+- https://raw.githubusercontent.com/shaenxxx-commits/klan/main/docs/CURRENT_STATE.md
+- https://raw.githubusercontent.com/shaenxxx-commits/klan/main/docs/ONTOLOGY.md
+- https://raw.githubusercontent.com/shaenxxx-commits/klan/main/docs/DECISIONS.md
+- https://raw.githubusercontent.com/shaenxxx-commits/klan/main/docs/REDACTIONS.md
+- https://raw.githubusercontent.com/shaenxxx-commits/klan/main/meta/operator-preferences.md
+- https://raw.githubusercontent.com/shaenxxx-commits/klan/main/meta/handoff-current.md
+- https://raw.githubusercontent.com/shaenxxx-commits/klan/main/meta/open-questions.md
+
+LAB:
+- https://raw.githubusercontent.com/shaenxxx-commits/nova-cortex-lab/main/README.md
+- https://raw.githubusercontent.com/shaenxxx-commits/nova-cortex-lab/main/METHOD.md
+- https://raw.githubusercontent.com/shaenxxx-commits/nova-cortex-lab/main/CONCEPT.md
+
+Envoy:
+- https://raw.githubusercontent.com/shaenxxx-commits/envoy/main/README.md
+- https://raw.githubusercontent.com/shaenxxx-commits/envoy/main/docs/DDA-v0.1.md
+- https://raw.githubusercontent.com/shaenxxx-commits/envoy/main/docs/FIELD-SELECTION-v0.1.md
 
 Дані KLAN (raw/, sensitive/, evidence/) зовнішнім
 не передаються ніколи.
