@@ -41,6 +41,7 @@
       ONTOLOGY.md       — типи сутностей і зв'язки
       DECISIONS.md      — журнал рішень
       REDACTIONS.md     — журнал редагувань
+      LINEAGE.md        — карта залежностей від LAB
     meta/               — робочий шар
       operator-preferences.md — правила роботи з ведучим
       handoff-current.md      — знімок для передачі
