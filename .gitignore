@@ -1,9 +1,7 @@
-# Sensitive and raw personal data
+# Дані — ніколи не в публічному метод-шарі
+raw/
 sensitive/
-raw/pii/
-raw/medical/
-*.scan.pdf
-*.id.*
+evidence/
 
 # Secrets and local configs
 .env
