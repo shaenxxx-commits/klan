@@ -29,8 +29,7 @@
 - LAB (метод координації, зовнішнє джерело):
   https://github.com/shaenxxx-commits/nova-cortex-lab
 - Envoy (паралельна пілотна гілка):
-  https://github.com/shaenxxx-commits/<repo>
-  [URL уточнити]
+  https://github.com/shaenxxx-commits/envoy
 
 Дані KLAN (raw/, sensitive/, evidence/) зовнішнім
 не передаються ніколи.
