@@ -42,6 +42,7 @@
       DECISIONS.md      — журнал рішень
       REDACTIONS.md     — журнал редагувань
       LINEAGE.md        — карта залежностей від LAB
+      MASKING.md        — схема маскування PII
     meta/               — робочий шар
       operator-preferences.md — правила роботи з ведучим
       handoff-current.md      — знімок для передачі
