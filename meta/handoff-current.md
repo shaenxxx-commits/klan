@@ -9,7 +9,7 @@
 
 ## CURRENT STATE
 
-    HEAD: a13606b (main = origin/main)
+    HEAD: d299b11 (main = origin/main)
     ACTIVE PHASE: roadmap phase 2 (2.3 залишається)
     STATUS: open
     LAST COMPLETED: 2.2 Q3 (MASKING.md)
@@ -26,7 +26,6 @@
       - Фізичний носій бекапу — відкладено.
     PENDING DECISION:
       - Q10.1 — класи документів.
-    LAST RESPONSE NUMBER: MS249
 
 ## Repository
 
