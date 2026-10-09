@@ -1,0 +1,13 @@
+# Sensitive and raw personal data
+sensitive/
+raw/pii/
+raw/medical/
+*.scan.pdf
+*.id.*
+
+# Secrets and local configs
+.env
+*.key
+*.secret
+*.pem
+config.local.*
