@@ -20,10 +20,9 @@
       Джерело: SYNTHESIS-run2 §1.2.
       Статус: DONE (2026-10-09)
 
-- 1.3 Шаблон `OPERATOR_OVERRIDE` у `CONCEPT.md`
-      або `REDACTIONS.md`.
+- 1.3 Шаблон `OPERATOR_OVERRIDE` у `CONCEPT.md`.
       Джерело: SYNTHESIS-run2 §1.4.
-      Статус: TODO
+      Статус: DONE (2026-10-09)
 
 - 1.4 Рішення про активний `UNKNOWN`.
       Джерело: SYNTHESIS-run2 §2.2.
