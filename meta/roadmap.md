@@ -18,7 +18,7 @@
 - 1.2 Перегляд `DECISIONS.md` — маркери «свідоме» /
       «передчасне» по кожному ранньому рішенню.
       Джерело: SYNTHESIS-run2 §1.2.
-      Статус: TODO
+      Статус: DONE (2026-10-09)
 
 - 1.3 Шаблон `OPERATOR_OVERRIDE` у `CONCEPT.md`
       або `REDACTIONS.md`.
