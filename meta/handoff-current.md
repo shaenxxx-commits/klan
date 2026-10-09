@@ -1,6 +1,6 @@
 # HANDOFF CURRENT — KLAN
 
-**Дата:** 2026-10-09
+**Дата:** 2026-10-10
 **Статус:** актуальний
 **Основа:** handoff-protocol LAB (адаптується)
 
@@ -9,77 +9,128 @@
 
 ## CURRENT STATE
 
-    HEAD: bd8d381 (main = origin/main)
-    ACTIVE PHASE: external-run-preparation
+    HEAD: a13606b (main = origin/main)
+    ACTIVE PHASE: roadmap phase 2 (2.3 залишається)
     STATUS: open
-    LAST COMPLETED: Q8 закрито (публічний метод-шар);
-                    meta/externals/ створено
+    LAST COMPLETED: 2.2 Q3 (MASKING.md)
     WORKING HYPOTHESES:
       - Мова проєкту — українська.
       - Назва KLAN (латиниця), кирилицею КЛАН.
-      - Метки знання і статуси — англійською.
-      - Зовнішні читають тільки публічний метод-шар.
+      - Метки знання і статуси мета-шару — англійською.
+      - Публічний метод-шар (docs/, meta/, README).
+      - Дані (raw/, sensitive/, evidence/) — ніколи
+        не в публічний репо.
     KNOWN UNKNOWNs:
-      - Бекап-схема (Q9).
-      - Схема маскування (Q3).
-      - Конвеєр сканів (Q10).
-      - Перший прогін зовнішніх не проведено.
+      - Q5, Q6 — DEFERRED.
+      - Q10 — конвеєр сканів (TODO).
+      - Фізичний носій бекапу — відкладено.
     PENDING DECISION:
-      - Q9: провайдер, фізичний носій, шифрування.
-      - Q10: класи документів, OCR, структура.
-      - Q3: MASKING.md vs розділ у CONCEPT.
-    LAST RESPONSE NUMBER: MS138
+      - Q10.1 — класи документів.
+    LAST RESPONSE NUMBER: MS249
 
 ## Repository
 
-- KLAN: ~/lch (git init, main, remote origin)
+- KLAN: ~/lch (git main, remote origin)
   https://github.com/shaenxxx-commits/klan
-- LAB (external source, метод координації):
+- LAB (method source):
   https://github.com/shaenxxx-commits/nova-cortex-lab
-- Envoy (паралельна пілотна гілка):
+- Envoy (parallel pilot):
   https://github.com/shaenxxx-commits/envoy
+- novohalyshchyna-repo (public community project,
+  source of two practices adopted):
+  https://github.com/shaenxxx-commits/novohalyshchyna-repo
+  Local clone: ~/novohalyshchyna-repo
 
-## Структура
+## Structure
 
     lch/
     ├── README.md
     ├── docs/           — AGENT, CONCEPT, CURRENT_STATE,
-    │                     ONTOLOGY, DECISIONS, REDACTIONS
+    │                     ONTOLOGY, DECISIONS, REDACTIONS,
+    │                     LINEAGE, MASKING
     ├── meta/           — operator-preferences,
     │                     handoff-current, open-questions,
-    │                     pre-commit.sh
-    │   └── externals/  — README + журнали прогонів
-    ├── raw/            — поза git
-    ├── sensitive/      — поза git
+    │                     roadmap, pre-commit.sh, backup.sh
+    │   └── externals/  — README + 6 runs + 2 SYNTHESIS
+    ├── raw/            — поза git, порожній
+    ├── sensitive/      — поза git, порожній
     │   └── quarantine/
-    └── evidence/       — поза git
+    └── evidence/       — поза git, порожній
 
-## Публічний метод-шар
+## Infrastructure
 
-У GitHub-репо потрапляють: README.md, docs/, meta/.
-Не потрапляють: raw/, sensitive/, evidence/.
+- Git identity local: LCH Kuchuk <maia.systems@proton.me>
+- Permissions: 750/640, umask 0027 у ~/.bashrc
+- Pre-commit guard: meta/pre-commit.sh, symlink
+- Backup: meta/backup.sh + systemd user timer
+  (klan-backup.timer, 03:00 daily, Persistent=true)
+  → Proton Drive /my-files/KLAN/backup/
+  Proton CLI: ~/.local/bin/proton-drive (v0.9.0)
+  Linger: enabled
+- Rotation: 3 archives
 
-## Ролі
+## External runs
 
-- Architect: shaen (Оператор)
-- Lead: поточний ведучий
-- External: GPT-5.6 Luna, Kimi K2 Thinking,
-  Qwen3.7-Plus
+Run1 (2026-10-09, GitHub UI URLs):
+- gpt-6, kimi-k2-thinking, qwen3.7
+- Problem: files unread, answers based on snippets
+- SYNTHESIS: 2026-10-09-SYNTHESIS.md
 
-## Що не зроблено
+Run2 (2026-10-09, raw-URLs):
+- gpt-6: ACCESS_OK, new correct analysis
+- kimi-k2-thinking: confabulation (cites non-existent
+  elements), see warning in file
+- qwen3.7: identical to run1 (cache/replay issue)
+- SYNTHESIS: 2026-10-09-SYNTHESIS-run2.md
 
-- Q3, Q9, Q10 не закриті.
-- Перший прогін зовнішніх не проведено.
-- raw/ не наповнено.
-- Бекап-схема не налаштована.
+Usable: gpt-6. Conditional: kimi (require citation).
+Verify: qwen.
 
-## Де дивитись
+## Roadmap state
 
-- docs/AGENT.md — точка входу
-- docs/CONCEPT.md — метод
-- docs/DECISIONS.md — журнал рішень
-- meta/operator-preferences.md — правила роботи
-- meta/open-questions.md — відкриті питання
-- meta/externals/README.md — правила прогонів
-- LAB (https://github.com/shaenxxx-commits/nova-cortex-lab)
-  — джерело методу
+Phase 1 (structural DDA): DONE (1.1-1.5)
+Phase 2:
+- 2.1 Q9 backup: DONE
+- 2.2 Q3 masking: DONE
+- 2.3 Q10 scans pipeline: TODO ← next
+Phase 3 (data-dependent): DEFERRED (3.1, 3.2)
+
+## Q-status
+
+- Q1, Q2, Q3, Q4, Q7, Q8 — CLOSED
+- Q5, Q6 — DEFERRED
+- Q9 — CLOSED
+- Q10 — OPEN (current)
+
+## Roles
+
+- Architect: shaen (Operator)
+- Lead: current
+- External: GPT-6, Kimi K2 Thinking, Qwen3.7
+
+## Adopted from novohalyshchyna-repo
+
+- Principle: "no document before its function in
+  documentary architecture is defined"
+  (CONCEPT.md §5 → KLAN principle #8)
+- OCR-rule: OCR text not verified for critical
+  fields (PIB, numbers, dates) without visual check
+  (CONCEPT.md, after E-levels)
+
+## Not done
+
+- Q10 (scans pipeline)
+- Physical backup medium (deferred)
+- Real data in raw/
+
+## Where to look
+
+- docs/AGENT.md — entry point
+- docs/CONCEPT.md — method
+- docs/DECISIONS.md — decision journal
+- docs/LINEAGE.md — dependency map
+- docs/MASKING.md — PII masking
+- meta/roadmap.md — current work order
+- meta/open-questions.md — open questions
+- meta/operator-preferences.md — working rules
+- meta/externals/ — external runs history
