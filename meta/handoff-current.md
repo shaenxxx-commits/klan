@@ -118,7 +118,6 @@ Phase 3 (data-dependent): DEFERRED (3.1, 3.2)
 
 ## Not done
 
-- Q10 (scans pipeline)
 - Physical backup medium (deferred)
 - Real data in raw/
 
