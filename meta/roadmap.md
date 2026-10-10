@@ -41,6 +41,8 @@
       шифрування).
       Статус: DONE (2026-10-10) — Proton Drive Free,
       meta/backup.sh + systemd timer, щодня 03:00.
+      Примітка: Q9.2 (фізичний носій в іншій локації)
+      — DEFERRED окремо, не блокує baseline.
 
 - 2.2 Q3 — схема маскування.
       Статус: DONE (2026-10-10) — docs/MASKING.md

@@ -23,7 +23,7 @@
     KNOWN UNKNOWNs:
       - Q5, Q6 — DEFERRED.
       - Q10 — закрито як baseline, ревізія при появі даних.
-      - Фізичний носій бекапу — відкладено.
+      - Q9.2 (фізичний носій в іншій локації) — DEFERRED.
     PENDING DECISION:
       - External run 3 (після закриття Фази 2).
 
