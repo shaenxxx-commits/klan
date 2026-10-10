@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # KLAN backup to Proton Drive.
 # Бекапить sensitive/, raw/, evidence/ у /my-files/KLAN/backup/.
+# sensitive/ включає masking-map.md (MASKING.md §Процедура).
 # Ротація: зберігає 3 останні архіви.
 
 set -euo pipefail
