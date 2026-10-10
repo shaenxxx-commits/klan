@@ -9,10 +9,10 @@
 
 ## CURRENT STATE
 
-    HEAD: d299b11 (main = origin/main)
-    ACTIVE PHASE: roadmap phase 2 (2.3 залишається)
+    HEAD: <pending> (main = origin/main)
+    ACTIVE PHASE: roadmap phase 3 (DEFERRED до появи даних)
     STATUS: open
-    LAST COMPLETED: 2.2 Q3 (MASKING.md)
+    LAST COMPLETED: 2.3 Q10 (SCANS.md, baseline)
     WORKING HYPOTHESES:
       - Мова проєкту — українська.
       - Назва KLAN (латиниця), кирилицею КЛАН.
@@ -22,10 +22,10 @@
         не в публічний репо.
     KNOWN UNKNOWNs:
       - Q5, Q6 — DEFERRED.
-      - Q10 — конвеєр сканів (TODO).
+      - Q10 — закрито як baseline, ревізія при появі даних.
       - Фізичний носій бекапу — відкладено.
     PENDING DECISION:
-      - Q10.1 — класи документів.
+      - External run 3 (після закриття Фази 2).
 
 ## Repository
 
@@ -91,7 +91,7 @@ Phase 1 (structural DDA): DONE (1.1-1.5)
 Phase 2:
 - 2.1 Q9 backup: DONE
 - 2.2 Q3 masking: DONE
-- 2.3 Q10 scans pipeline: TODO ← next
+- 2.3 Q10 scans pipeline: DONE (baseline)
 Phase 3 (data-dependent): DEFERRED (3.1, 3.2)
 
 ## Q-status
@@ -99,7 +99,7 @@ Phase 3 (data-dependent): DEFERRED (3.1, 3.2)
 - Q1, Q2, Q3, Q4, Q7, Q8 — CLOSED
 - Q5, Q6 — DEFERRED
 - Q9 — CLOSED
-- Q10 — OPEN (current)
+- Q10 — CLOSED (baseline, 2026-10-10)
 
 ## Roles
 
