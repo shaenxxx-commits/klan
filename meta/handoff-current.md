@@ -9,10 +9,10 @@
 
 ## CURRENT STATE
 
-    HEAD: 1acd2a5 (main = origin/main)
+    HEAD: c426fea (main = origin/main)
     ACTIVE PHASE: roadmap phase 3 (DEFERRED до появи даних)
     STATUS: open
-    LAST COMPLETED: 2.3 Q10 (SCANS.md, baseline)
+    LAST COMPLETED: run3 processed (external audit) + SCANS.md Q10.4 tightened (A1-A7)
     WORKING HYPOTHESES:
       - Мова проєкту — українська.
       - Назва KLAN (латиниця), кирилицею КЛАН.
@@ -25,7 +25,7 @@
       - Q10 — закрито як baseline, ревізія при появі даних.
       - Q9.2 (фізичний носій в іншій локації) — DEFERRED.
     PENDING DECISION:
-      - External run 3 (після закриття Фази 2).
+      - Немає. Фаза 3 (DEFERRED до появи даних).
 
 ## Repository
 
@@ -98,7 +98,7 @@ Phase 3 (data-dependent): DEFERRED (3.1, 3.2)
 
 - Q1, Q2, Q3, Q4, Q7, Q8 — CLOSED
 - Q5, Q6 — DEFERRED
-- Q9 — CLOSED
+- Q9 — CLOSED (baseline, 2026-10-10; Q9.2 DEFERRED)
 - Q10 — CLOSED (baseline, 2026-10-10)
 
 ## Roles
