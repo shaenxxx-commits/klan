@@ -9,7 +9,7 @@
 
 ## CURRENT STATE
 
-    HEAD: <pending> (main = origin/main)
+    HEAD: f3db54a (main = origin/main)
     ACTIVE PHASE: roadmap phase 3 (DEFERRED до появи даних)
     STATUS: open
     LAST COMPLETED: SCANNING-SETUP.md (Windows/Ubuntu split) + import-scan.sh + fstab mount
