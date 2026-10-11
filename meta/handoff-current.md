@@ -1,6 +1,6 @@
 # HANDOFF CURRENT — KLAN
 
-**Дата:** 2026-10-10
+**Дата:** 2026-10-11
 **Статус:** актуальний
 **Основа:** handoff-protocol LAB (адаптується)
 
@@ -9,10 +9,10 @@
 
 ## CURRENT STATE
 
-    HEAD: f3db54a (main = origin/main)
+    HEAD: bc00e1c (main = origin/main)
     ACTIVE PHASE: roadmap phase 3 (DEFERRED до появи даних)
     STATUS: open
-    LAST COMPLETED: SCANNING-SETUP.md (Windows/Ubuntu split) + import-scan.sh + fstab mount
+    LAST COMPLETED: run4 processed + import-scan.sh critical fixes (A1-A7, A9)
     WORKING HYPOTHESES:
       - Мова проєкту — українська.
       - Назва KLAN (латиниця), кирилицею КЛАН.
@@ -26,8 +26,18 @@
       - Сканер MF3228: тільки Windows, див. SCANNING-SETUP.md.
       - Q9.2 (фізичний носій в іншій локації) — DEFERRED.
     PENDING DECISION:
-      - Run4 (external audit of new architecture).
       - Windows-side setup (via РЧ, in progress).
+
+PRE-FIRST-SCAN CHECKLIST:
+      - [x] import-scan.sh critical fixes (A1-A7, A9)
+      - [ ] Windows drop zone S:\KLAN\scan-inbox\<class>\
+      - [ ] verify backup restore from Proton Drive
+      - [ ] PDF/A validator tool selection
+      - [ ] OCR sidecar (tesseract -> sensitive/ocr/<class>/<ID>.txt)
+      - [ ] multipage import strategy (A8, deferred until needed)
+      - [ ] EXIF cleanup (A8, deferred until first real scan)
+      - [ ] tags schema (deferred)
+      Details: meta/externals/2026-10-11-SYNTHESIS-run4.md
 
 ## Repository
 
