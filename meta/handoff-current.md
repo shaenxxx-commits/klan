@@ -9,10 +9,10 @@
 
 ## CURRENT STATE
 
-    HEAD: c426fea (main = origin/main)
+    HEAD: <pending> (main = origin/main)
     ACTIVE PHASE: roadmap phase 3 (DEFERRED до появи даних)
     STATUS: open
-    LAST COMPLETED: run3 processed (external audit) + SCANS.md Q10.4 tightened (A1-A7)
+    LAST COMPLETED: SCANNING-SETUP.md (Windows/Ubuntu split) + import-scan.sh + fstab mount
     WORKING HYPOTHESES:
       - Мова проєкту — українська.
       - Назва KLAN (латиниця), кирилицею КЛАН.
@@ -23,9 +23,11 @@
     KNOWN UNKNOWNs:
       - Q5, Q6 — DEFERRED.
       - Q10 — закрито як baseline, ревізія при появі даних.
+      - Сканер MF3228: тільки Windows, див. SCANNING-SETUP.md.
       - Q9.2 (фізичний носій в іншій локації) — DEFERRED.
     PENDING DECISION:
-      - Немає. Фаза 3 (DEFERRED до появи даних).
+      - Run4 (external audit of new architecture).
+      - Windows-side setup (via РЧ, in progress).
 
 ## Repository
 
@@ -128,6 +130,7 @@ Phase 3 (data-dependent): DEFERRED (3.1, 3.2)
 - docs/DECISIONS.md — decision journal
 - docs/LINEAGE.md — dependency map
 - docs/MASKING.md — PII masking
+- docs/SCANNING-SETUP.md — Windows/Ubuntu scanner split
 - meta/roadmap.md — current work order
 - meta/open-questions.md — open questions
 - meta/operator-preferences.md — working rules
