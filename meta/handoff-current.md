@@ -30,7 +30,7 @@
 
 PRE-FIRST-SCAN CHECKLIST:
       - [x] import-scan.sh critical fixes (A1-A7, A9)
-      - [ ] Windows drop zone S:\KLAN\scan-inbox\<class>\
+      - [ ] Windows drop zone D:\KLAN\scan-inbox\<class>\ (D:, not S:)
       - [ ] verify backup restore from Proton Drive
       - [ ] PDF/A validator tool selection
       - [ ] OCR sidecar (tesseract -> sensitive/ocr/<class>/<ID>.txt)

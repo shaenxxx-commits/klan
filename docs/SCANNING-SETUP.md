@@ -30,7 +30,7 @@
     MF3228                          ~/lch  (ext4, repo,
        │                                    git, sensitive/,
        ↓                                    pipeline, backup)
-    S:\KLAN\scan-inbox\<class>\         ↑
+    D:\KLAN\scan-inbox\<class>\         ↑
     (drop zone, NTFS)                    │
                        ─── import-scan.sh ───┘
                        (mount rw, copy, verify,
@@ -71,7 +71,13 @@
 
 ## Drop zone (NTFS)
 
-    S:\KLAN\scan-inbox\
+Windows-літера: `D:\` (у ТЗ було `S:\`; фактично диск
+у Windows змонтовано як `D:\`, мітка SHARED). Ubuntu
+монтує `/dev/sda2` незалежно від літери — для конвеєра
+різниці немає. Рішення 2026-10-12: у документах
+використовуємо `D:\`; літеру `S:` не створюємо.
+
+    D:\KLAN\scan-inbox\
       identity\
       civil\
       medical\

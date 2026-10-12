@@ -3,9 +3,9 @@
 # Переміщує скани з Windows NTFS inbox у ~/lch/sensitive/scans/_originals/.
 #
 # Потік:
-#   S:\KLAN\scan-inbox\<class>\*.{png,jpg,jpeg}    (Windows, NTFS)
+#   D:\KLAN\scan-inbox\<class>\*.{png,jpg,jpeg}    (Windows, NTFS)
 #     → ~/lch/sensitive/scans/_originals/<class>/<ID>/page-01.<ext>
-#   оброблений файл → S:\KLAN\.imported\<class>\
+#   оброблений файл → D:\KLAN\.imported\<class>\
 #
 # NTFS у fstab змонтований ro. Скрипт:
 #   1. umount /mnt/shared
