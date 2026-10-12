@@ -9,7 +9,7 @@
 
 ## CURRENT STATE
 
-    HEAD: 44d8e4c (main = origin/main)
+    HEAD: f2e9102 (main = origin/main)
     ACTIVE PHASE: roadmap phase 3 (DEFERRED до появи даних)
     STATUS: open
     LAST COMPLETED: data policy GOVERNANCE (external LLM allowed; masking optional)
