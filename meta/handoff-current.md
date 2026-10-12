@@ -9,7 +9,7 @@
 
 ## CURRENT STATE
 
-    HEAD: 4d3a652 (main = origin/main)
+    HEAD: 44d8e4c (main = origin/main)
     ACTIVE PHASE: roadmap phase 3 (DEFERRED до появи даних)
     STATUS: open
     LAST COMPLETED: run4 processed + import-scan.sh critical fixes (A1-A7, A9)
