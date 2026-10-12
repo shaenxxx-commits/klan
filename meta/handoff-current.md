@@ -1,6 +1,6 @@
 # HANDOFF CURRENT — KLAN
 
-**Дата:** 2026-10-11
+**Дата:** 2026-10-12
 **Статус:** актуальний
 **Основа:** handoff-protocol LAB (адаптується)
 
@@ -12,7 +12,7 @@
     HEAD: 44d8e4c (main = origin/main)
     ACTIVE PHASE: roadmap phase 3 (DEFERRED до появи даних)
     STATUS: open
-    LAST COMPLETED: run4 processed + import-scan.sh critical fixes (A1-A7, A9)
+    LAST COMPLETED: data policy GOVERNANCE (external LLM allowed; masking optional)
     WORKING HYPOTHESES:
       - Мова проєкту — українська.
       - Назва KLAN (латиниця), кирилицею КЛАН.
@@ -25,8 +25,10 @@
       - Q10 — закрито як baseline, ревізія при появі даних.
       - Сканер MF3228: тільки Windows, див. SCANNING-SETUP.md.
       - Q9.2 (фізичний носій в іншій локації) — DEFERRED.
+    FIRST REAL DATA TARGET: mother card (medical + legal)
     PENDING DECISION:
       - Windows-side setup (via РЧ, in progress).
+      - Mother card: fill in values (template created).
 
 PRE-FIRST-SCAN CHECKLIST:
       - [x] import-scan.sh critical fixes (A1-A7, A9)
@@ -37,6 +39,7 @@ PRE-FIRST-SCAN CHECKLIST:
       - [ ] multipage import strategy (A8, deferred until needed)
       - [ ] EXIF cleanup (A8, deferred until first real scan)
       - [ ] tags schema (deferred)
+      - [x] data policy (GOVERNANCE 2026-10-12: external LLM OK, no mandatory masking)
       Details: meta/externals/2026-10-11-SYNTHESIS-run4.md
 
 ## Repository
